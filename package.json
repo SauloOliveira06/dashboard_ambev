@@ -2,10 +2,23 @@
   "name": "dashboard_ambev",
   "version": "0.1.0",
   "private": true,
+  "main": "index.jsx",
+  "description": "dashboard for Ambev",
+  "engines": {
+    "node": "12.x"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "next": "9.3.3",

@@ -1,3 +1,13 @@
+<p align="center">
+  <a href="https://www.buritech.com.br">
+    <img alt="Ambev" src="http://www.ambev.com.br/conteudo/themes/ambev-institucional/dist/img/cervejaria-ambev.svg" width="30%" />
+  </a>
+</p>
+<h1 align="center">
+  DashBoard-inativos default starter
+</h1>
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
