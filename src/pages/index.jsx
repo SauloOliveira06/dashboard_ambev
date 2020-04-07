@@ -12,14 +12,6 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="grid justify-center content-center text-center">
-          <p className="text-5xl font-bold ">
-            Bem vindo ao{" "}
-            <a className="text-blue-600" href="https://www.ambev.com.br/">
-              Dashboard Ambev!
-            </a>
-          </p>
-        </div>
       </Layout>
     );
   }
