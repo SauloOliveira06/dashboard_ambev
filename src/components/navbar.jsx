@@ -8,7 +8,7 @@ class Navbar extends React.Component {
         <div className="flex  items-center">
           <p className="text-white">Administrador</p>
           <button class="material-icons bg-transparent text-white ounded-full h-10 w-10 ">
-            face
+            settings
           </button>
         </div>
       </nav>
