@@ -6,16 +6,12 @@ import nextCookie from "next-cookies";
 import { withAuthSync } from "../utils/auth";
 import getHost from "../utils/get-host";
 import fetch from "isomorphic-unfetch";
+import Layout from "../components/layout";
 
-const Index = props => {
-  const { avatarUrl } = props.data;
-  return (
-    <div>
-      <Head>
-        <title>Ambev Dashboard</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className="grid grid-cols-1 flex relative h-screen">
+class Index extends React.Component {
+  render() {
+    return (
+      <Layout>
         <div className="grid justify-center content-center text-center">
           <p className="text-5xl font-bold ">
             Bem vindo ao{" "}
@@ -24,11 +20,12 @@ const Index = props => {
             </a>
           </p>
         </div>
-      </main>
-    </div>
-  );
-};
-Index.getInitialProps = async ctx => {
+      </Layout>
+    );
+  }
+}
+
+Index.getInitialProps = async (ctx) => {
   const { token } = nextCookie(ctx);
   const apiUrl = getHost(ctx.req) + "api/profile";
   const redirectError = () =>
@@ -40,8 +37,8 @@ Index.getInitialProps = async ctx => {
     const response = await fetch(apiUrl, {
       credentials: "include",
       headers: {
-        Authorization: JSON.stringify({ token })
-      }
+        Authorization: JSON.stringify({ token }),
+      },
     });
 
     if (response.ok) {
