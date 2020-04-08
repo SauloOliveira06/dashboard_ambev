@@ -4,7 +4,7 @@ import { login } from "../utils/auth";
 
 const Login = () => {
   const [userData, setUserData] = useState({ username: "", error: "" });
-  const handleSubmit = async event => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     setUserData(Object.assign({}, userData, { error: "" }));
 
@@ -15,7 +15,7 @@ const Login = () => {
       const response = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username })
+        body: JSON.stringify({ username }),
       });
       if (response.status === 200) {
         const { token } = await response.json();
@@ -32,7 +32,7 @@ const Login = () => {
       const { response } = error;
       setUserData(
         Object.assign({}, userData, {
-          error: response ? response.statusText : error.message
+          error: response ? response.statusText : error.message,
         })
       );
     }
@@ -56,7 +56,7 @@ const Login = () => {
               id="username"
               name="username"
               value={userData.username}
-              onChange={event =>
+              onChange={(event) =>
                 setUserData(
                   Object.assign({}, userData, { username: event.target.value })
                 )
@@ -65,7 +65,7 @@ const Login = () => {
           </div>
           <div class="grid px-6 py-4">
             <button
-              class="bg-yellow-600 hover:bg-yellow-500  text-white font-bold py-2 px-4 rounded"
+              class="shadow-lg bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:shadow-outline text-white font-bold py-2 px-4 rounded"
               type="submit"
             >
               Conectar
