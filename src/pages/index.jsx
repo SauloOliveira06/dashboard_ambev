@@ -7,11 +7,23 @@ import { withAuthSync } from "../utils/auth";
 import getHost from "../utils/get-host";
 import fetch from "isomorphic-unfetch";
 import Layout from "../components/layout";
+import Card from "../components/card";
 
 class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <div className="flex flex-col inline-block p-6">
+          <p className="font-bold text-xl mb-6">Carteira Mib</p>
+          <div className="grid grid-cols-3 gap-4">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
       </Layout>
     );
   }
