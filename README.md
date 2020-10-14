@@ -1,8 +1,10 @@
-<p align="center">
-  <a href="https://www.ambev.com.br/">
-    <img alt="Ambev" style=" fill: blue; " src="http://www.ambev.com.br/conteudo/themes/ambev-institucional/dist/img/cervejaria-ambev.svg" width="30%" />
-  </a>
-</p>
-<h1 align="center">
-  DashBoard-inativos default starter
-</h1>
+DashBoard-Ambev default starter
+======================
+
+### Contributors
+This project exists thanks to all the people who contribute. 
+
+<a alt="Linkedin" href="https://www.linkedin.com/in/kaiogama/"><img src="https://img.shields.io/badge/Linkedin-Kaio%20B.%20Gama-blue?logo=linkedin"/></a>
+<a alt="Github" href="https://github.com/kaiogama18"><img src="https://img.shields.io/badge/Github-Kaio%20B.%20Gama-lightgrey?logo=github"/></a>
+
+### Saulo Oliveira
